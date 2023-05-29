@@ -1,0 +1,42 @@
+*{
+      font-family: monospace;
+      font-size: 17px;
+}
+.bgcolor{
+      background:#C1E1C1;
+}
+.navbar{
+      background-color: #C1E1C1;
+}
+.navbar-brand img{
+      width: 60px;
+      height: 60px;
+}
+#mynav ul li, .navbar-brand{
+      margin-right: 5px;
+      font-size: large;
+      color: black;
+      font-weight: 600;
+}
+.favorites img{ 
+ height: 200px; 
+ object-fit: cover;
+  }
+.carousel-caption  {
+font-style: italic;
+line-height: 1;
+font-size: 12px;
+}
+.text{
+      text-align: justify;
+}
+.ls{
+      height: 1194px;
+      width: 720px;
+      object-fit: cover;
+}
+.content{
+      text-align: justify;
+      text-indent: 15%;
+      font-size: 15px;
+}

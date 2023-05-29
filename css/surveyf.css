@@ -1,0 +1,68 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image:  url('../fimages/surveybg.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-left: 23%;
+	width: 60%;
+	height: 100%;
+	font-family: 'Philosopher', sans-serif;
+}
+.nav{
+	height: 10vh;
+	font-size: 23px;
+}
+.back a{
+	color: #912683;
+margin-left: -70%;
+text-decoration: none;
+}
+.back a:hover{
+	color: #d81159;
+}
+.next a{
+	color:  #912683;
+	float: right;
+	margin-right: -50%;
+	text-decoration: none;
+	}
+.next a:hover{
+		color:  #d81159;
+	}
+form{
+	align-items: center;
+	padding: 10px;
+	background-color:rgba(193, 237, 240, 0.5);
+	box-shadow: 0 0 10px 10px rgba(0, 0, 0, .2);
+}
+input:focus::placeholder {
+	color: transparent;
+  }
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+  span {
+    font-family: 'Rocher';
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .subheading{
+	font-size: 18px;
+	justify-content: center;
+	text-align: center;
+	color: black;
+  }
+  h6{
+	font-size: 17px;
+	font-weight: 600;
+}
+label{
+	font-size: 17px;
+}
