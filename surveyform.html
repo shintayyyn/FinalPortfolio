@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/surveyf.css">
+    <script src="https://kit.fontawesome.com/1115a55ae0.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./fimages/logoicon.png"  type="x-icon">
+	<title>Survey Form</title>
+</head>
+<div class="row nav pt-3">
+    <div class="back col-lg-6 col-6">
+        <a href="index.html"><i class="fa fa-backward" aria-hidden="true"></i> Go Back to Home</a>
+    </div>
+    <div class="next col-lg-6 col-6">
+        <a href="Responsive.html"> Go to Another Activity  <i class="fa fa-forward" aria-hidden="true"></i></a>
+    </div>
+</div>
+<body>
+	<div class="container">
+		<span class="heading"> Travel Survey Form </span>
+		<h6 class="subheading"> <i>Please take time to help us know about your dream travel destination & preferences.</i></h6>
+	</div>
+	<form class="container row mt-4 rounded-3 p-4 mb-5 needs-validation" novalidate>
+		<div class="mb-3 col-lg-6 col-12">
+			<label for="fname" class="form-label">First Name</label> 
+			<input type="text" name="fname" id="fname" placeholder="Enter first name" class="form-control" onkeydown="return event.key != 'Enter';" required>
+            <div class="valid-feedback">
+                Proceed
+            </div>
+            <div class="invalid-feedback">
+                Provide first name.
+            </div>
+        </div>
+			<div class="mb-3 col-lg-6 col-12">
+            <label for="lname" class="form-label">Last Name</label> 
+			<input type="text" name="lname" id="lname" placeholder="Enter last name" class="form-control" onkeydown="return event.key != 'Enter';" required>
+            <div class="valid-feedback">
+                Proceed
+            </div>   
+            <div class="invalid-feedback">
+                Provide last name.
+            </div>  
+		</div>
+        </div>
+            <div class="mb-3 col-lg-6 col-12">
+            <label for="email" class="form-label">Email</label>     
+			<input type="email" name="email" id="email" placeholder="Enter your email" class="form-control" onkeydown="return event.key != 'Enter';" required>
+            <div class="valid-feedback">
+                Proceed
+            </div>   
+            <div class="invalid-feedback">
+                Kindly input a valid email address.
+            </div>     
+		</div>	
+            <div class="mb-3 col-lg-6 col-12">
+            <label for="contactnum" class="form-label">Phone Number</label>     
+			<input type="tel" name="contactnum" id="contactnum" pattern="[0-9]{4}[0-9]{3}[0-9]{4}"
+            placeholder="Enter your phone no." class="form-control" onkeydown="return event.key != 'Enter';"  required> 
+            <div class="valid-feedback">
+                Proceed
+            </div>   
+            <div class="invalid-feedback">
+                Kindly enter a valid number.
+            </div>        
+        </div>
+        <div class="mb-3 col-lg-6 col-12">
+            <label for="age" class="form-label">Age (Optional)</label>     
+			<input type="number" name="age" id="age" placeholder="Enter Age" class="form-control">
+            <div class="valid-feedback">
+                Proceed
+            </div>    
+        </div>
+        <div class="mb-3 col-lg-6 col-12">
+            <label for="gender" class="form-label">Gender :</label>
+            <div>
+            <select name="gender" id="gender" class="p-2 w-100 form-check border-0 rounded" required aria-labelledby="gender options">
+                <span><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span>
+                <option value="" required> -- </option>
+                <option value="female" required>Female</option>
+                <option value="male" required>Male</option>
+                <option value="other" required>Prefer not to say</option>
+            </select>
+            <div class="valid-feedback">
+                Proceed
+            </div>   
+            <div class="invalid-feedback">
+                Please select an option.
+            </div> 
+            </div>  
+           </div>  
+            <!--PREFERENCES-->
+		<div>
+            <h6>What country in Asia do you want to visit first?</h6>
+                <select class="p-1 form-select" required aria-labelledby="select options">
+                   <option value="">-- select country --</option>
+                    <option value="China">China</option>
+                    <option value="India">India</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Iran">Iran</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Myanmar">Myanmar</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="Iraq">Iraq</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Uzbekistan">Uzbekistan</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Yemen">Yemen</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="North Korea">North Korea</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Kazakhstan">Kazakhstan</option>
+                    <option value="Syria">Syria</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Azerbaijan">Azerbaijan</option>
+                    <option value="United Arab Emirates">United Arab Emirates</option>
+                    <option value="Tajikistan">Tajikistan</option>
+                    <option value="Israel">Israel</option>
+                    <option value="Laos">Laos</option>
+                    <option value="Lebanon">Lebanon</option>
+                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                    <option value="Turkmenistan">Turkmenistan</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Oman">Oman</option>
+                    <option value="State of Palestine">State of Palestine</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Mongolia">Mongolia</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="Timor-Leste">Timor-Leste</option>
+                    <option value="Cyprus">Cyprus</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="Brunei">Brunei</option>
+                    <option value="Prefer Not to Say">Prefer Not to Say</option>
+                </select>
+                <div class="valid-feedback">
+                    Proceed
+                </div>  
+                <div class="invalid-feedback">
+                    Please select an option.
+                </div> 
+            </div>
+        <div>
+		<h6 class="mt-2">What International or Domestic Flight would you prefer to ride when traveling?</h6>    
+        </div>
+        <div>
+		<div class="form-check">
+            <input type="radio" class="form-check-input" name="radio" id="opt1" required> 
+            <label for="opt1" class="form-check-label">Philippine Airline </label> 
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" name="radio" id="opt2" required> 
+            <label for="opt2" class="form-check-label">Cebu Pacific</label> 
+         </div> 
+         <div class="form-check">
+            <input type="radio" class="form-check-input" name="radio" id="opt3" required> 
+            <label for="opt3" class="form-check-label">Air Asia</label>  
+         </div>
+         <div class="form-check">
+            <input type="radio" class="form-check-input" name="radio" id="opt4" required>
+            <label for="opt4" class="form-check-label">Sky-Jet</label> <!--opt > means options--> 
+            <div class="valid-feedback">
+                Proceed
+            </div> 
+            <div class="invalid-feedback">
+                Please select an option.
+            </div> 
+         </div>  
+         <div>
+		<h6 class="mt-2">For what reasons do you want to travel?</h6>     
+			<select class="form-select p-1" required aria-labelledby="options">
+				<option value="" required>-- select reasons --</option>
+				<option value="Business/Word" required>Business Trip</option>
+				<option value="Personal/Leisure" required>Personal</option>
+				<option value="Other" required>Other</option>
+			</select>
+            <div class="valid-feedback">
+                Proceed
+            </div>  
+            <div class="invalid-feedback">
+                Please select an option.
+            </div>   
+		</div>
+        <div>
+		<h6 class="mt-2">What kind of service would you like to experience the most while travelling?</h6>  
+        </div> 
+		<div class="form-check">
+            <input type="radio" class="form-check-input" name="checkbox" id="option1" required > 
+            <label for="option1" class="form-check-label">Service quality of flight attendants in assisting passengers.</label>
+        </div>
+        <div class="form-check ">
+			<input type="radio" class="form-check-input" name="checkbox" id="option2" required>
+            <label for="option2" class="form-check-label">Communication of crew during the flight.</label> 
+        </div>
+        <div class="form-check">   
+			<input type="radio" class="form-check-input" name="checkbox" id="option3" required>
+            <label for="option3" class="form-check-label"> Quality of food and beverages during the flight.</label>   
+        </div>
+        <div class="form-check "> 
+			<input type="radio" class="form-check-input"  name="checkbox" id="option4" required>
+            <label for="option4" class="form-check-label"> Availability and choice of in-flight entertainment.</label>
+        </div>
+        <div class="form-check ">     
+			<input type="radio" class="form-check-input"  name="checkbox" id="option5" required>
+            <label for="option5" class="form-check-label"> Availability of blankets, pillows, earphones, etc. during the flight.</label>    
+            <div class="valid-feedback">
+                Proceed
+            </div>  
+            <div class="invalid-feedback">
+                Please select an option.
+            </div> 
+            <div class="col-lg-6 col-12 pt-2 mt-2">
+                  <input class="form-check-input" type="checkbox"  id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+        <button type="submit" class="btn btn-outline-success col-12 col-lg-6 text-center mt-2 " value="Submit"  onkeydown="return event.key != 'Enter';" > SUBMIT</button>
+	</form>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+
+(function () {
+  'use strict'
+
+  var forms = document.querySelectorAll('.needs-validation')
+
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }else{
+          onsubmit=alert('Message Received');
+        }
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+    </script>
+</body>
+</html>
